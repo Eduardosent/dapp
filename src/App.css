@@ -1,0 +1,30 @@
+.ethfather{
+  position: fixed;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  height: 60vh;
+}
+.svgimg{
+  height: 300px;
+  filter:drop-shadow(1px 1px 2px #fdfcfc);
+  animation: ethlight 7s infinite forwards;
+}
+@keyframes ethlight {
+  0%{filter:drop-shadow(1px 1px 5px #fdfcfc);}
+  100%{filter:drop-shadow(0px 0px 0px #fdfcfc);}
+}
+h1{
+  text-align: center;
+  color: white;
+}
+@media (min-width:600px){
+  .ethfather{
+    height: 100vh;
+  }
+  .svgimg{
+    height: 90vh;
+  }
+}
