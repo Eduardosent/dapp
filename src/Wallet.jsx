@@ -1,6 +1,6 @@
 import React from 'react'
 import './Wallet.css'
-//import { Web3 } from 'web3'
+import { Web3 } from 'web3'
 import { useState } from 'react'
 
 export const Wallet = () => {
@@ -9,7 +9,6 @@ export const Wallet = () => {
     const [clave, setClave] = useState("")
     const [display, setDisplay] = useState("none")
 
-    const {Web3} = require('web3')
     const web3 = new Web3("https://rpc.sepolia.org")
 
     const generateWallet = () =>{
